@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         startGameOutlet.layer.cornerRadius = 25
         settingsOutlet.layer.cornerRadius = 25
         topRaitingOutlet.layer.cornerRadius = 25
-        settingsOutlet.setTitle("Settings", for: .normal)
-        topRaitingOutlet.setTitle("Top Raiting", for: .normal)
+//        settingsOutlet.setTitle("Settings", for: .normal)
+//        topRaitingOutlet.setTitle("Top Raiting", for: .normal)
     }
     @IBAction func startGameAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -54,6 +54,16 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
         
+    }
+    
+    func setFont(label string: String, for button: UIButton) {
+        let text = "\(string)"
+        let wholeRangeText = (text as NSString).range(of: text)
+        let attributedText = NSMutableAttributedString(string: text)
+        attributedText.addAttribute(.font, value: UIFont.perfect(ofSize: 20), range: wholeRangeText)
+        if let title = button.titleLabel {
+            title.attributedText = attributedText
+        }
     }
     
 }

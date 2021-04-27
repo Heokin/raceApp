@@ -15,8 +15,6 @@ class GameOverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         blurEffectView.alpha = 0.9
-        setFont(label: "back to menu", for: backToMenuButton)
-        setFont(label: "try again", for: tryAgainButton)
 
         backToMenuButton.backgroundColor = .black
         tryAgainButton.backgroundColor = .black
@@ -55,4 +53,5 @@ class GameOverViewController: UIViewController {
             title.attributedText = attributedText
         }
     }
+    
 }

@@ -19,6 +19,7 @@
 		0136997D262C985C009E1D95 /* UserDefault+SaveUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136997C262C985C009E1D95 /* UserDefault+SaveUserInfo.swift */; };
 		01369980262C9872009E1D95 /* UiView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136997F262C9872009E1D95 /* UiView+Shadow.swift */; };
 		01369983262C987F009E1D95 /* UiView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01369982262C987F009E1D95 /* UiView+Gradient.swift */; };
+		013810C026388E280037F998 /* 19888.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 013810BF26388E280037F998 /* 19888.ttf */; };
 		013DFDA42629902000E41E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DFDA32629902000E41E97 /* AppDelegate.swift */; };
 		013DFDA62629902000E41E97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DFDA52629902000E41E97 /* SceneDelegate.swift */; };
 		013DFDA82629902000E41E97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DFDA72629902000E41E97 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		0136997C262C985C009E1D95 /* UserDefault+SaveUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+SaveUserInfo.swift"; sourceTree = "<group>"; };
 		0136997F262C9872009E1D95 /* UiView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Shadow.swift"; sourceTree = "<group>"; };
 		01369982262C987F009E1D95 /* UiView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Gradient.swift"; sourceTree = "<group>"; };
+		013810BF26388E280037F998 /* 19888.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 19888.ttf; path = ../../../Desktop/19888.ttf; sourceTree = "<group>"; };
 		013DFDA02629902000E41E97 /* raceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		013DFDA32629902000E41E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		013DFDA52629902000E41E97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				01369959262ABFE3009E1D95 /* Classes */,
 				01369962262AC33F009E1D95 /* ViewControllers */,
 				013DFDA92629902000E41E97 /* Main.storyboard */,
+				013810BF26388E280037F998 /* 19888.ttf */,
 				013DFDAC2629902B00E41E97 /* Assets.xcassets */,
 				013DFDAE2629902B00E41E97 /* LaunchScreen.storyboard */,
 				013DFDB12629902B00E41E97 /* Info.plist */,
@@ -187,6 +190,7 @@
 				013DFDB02629902B00E41E97 /* LaunchScreen.storyboard in Resources */,
 				013DFDAD2629902B00E41E97 /* Assets.xcassets in Resources */,
 				013DFDAB2629902000E41E97 /* Main.storyboard in Resources */,
+				013810C026388E280037F998 /* 19888.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

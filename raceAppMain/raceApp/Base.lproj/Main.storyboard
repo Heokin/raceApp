@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="19888.ttf">
+            <string>PerfectDOSVGA437</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="CbO-4d-d10">
@@ -32,14 +37,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TOPRAITING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-Qo-2eL">
-                                <rect key="frame" x="158" y="160" width="98" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-Nw-ASE">
                                 <rect key="frame" x="158" y="774" width="98" height="63"/>
+                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="kLe-ps-w7d" eventType="touchUpInside" id="zD3-u9-ELb"/>
@@ -82,6 +82,12 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="d6l-Up-fpa"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qrN-uz-sgb"/>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TOPRAITING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-Qo-2eL">
+                                <rect key="frame" x="117" y="161" width="180" height="21"/>
+                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T8b-wx-IK4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,7 +130,7 @@
                                             <rect key="frame" x="45" y="681" width="124" height="64"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                             <state key="normal" title="MENU">
                                                 <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                             </state>
@@ -133,10 +139,10 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-gB-dnv">
-                                            <rect key="frame" x="255" y="681" width="124" height="64"/>
+                                            <rect key="frame" x="241" y="681" width="138" height="64"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                             <state key="normal" title="TRY AGAIN">
                                                 <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                             </state>
@@ -147,7 +153,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You lose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKh-cq-Ae4">
                                             <rect key="frame" x="45" y="326" width="334" height="38"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -168,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K95-mm-EUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="765"/>
+            <point key="canvasLocation" x="-49.275362318840585" y="764.73214285714278"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="gr4-FF-BG3">
@@ -256,8 +262,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RACE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-fG-tlT">
-                                <rect key="frame" x="20" y="227" width="374" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <rect key="frame" x="20" y="227" width="374" height="26"/>
+                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -267,8 +273,8 @@
                                     <constraint firstAttribute="width" constant="205" id="UIz-yN-72H"/>
                                     <constraint firstAttribute="height" constant="58" id="rGo-u1-o8x"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Start game"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="26"/>
+                                <state key="normal" title="Setting"/>
                                 <connections>
                                     <action selector="settingsAction:" destination="0OI-vc-A8u" eventType="touchUpInside" id="MoM-LE-DVn"/>
                                 </connections>
@@ -279,8 +285,8 @@
                                     <constraint firstAttribute="height" constant="58" id="pYu-76-fZ1"/>
                                     <constraint firstAttribute="width" constant="205" id="sco-f2-CRC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Start game"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="26"/>
+                                <state key="normal" title="Top raiting"/>
                                 <connections>
                                     <action selector="topRaitingAction:" destination="0OI-vc-A8u" eventType="touchUpInside" id="fTN-p5-tdT"/>
                                 </connections>
@@ -291,8 +297,8 @@
                                     <constraint firstAttribute="width" constant="205" id="Lj7-LM-IHa"/>
                                     <constraint firstAttribute="height" constant="58" id="Xcc-mK-dII"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Start game"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="29"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startGameAction:" destination="0OI-vc-A8u" eventType="touchUpInside" id="MVe-jK-es9"/>
                                 </connections>
@@ -369,14 +375,14 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT TYPE OF DANGEROUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMg-cy-iRe">
                                                         <rect key="frame" x="8" y="0.0" width="382" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="22"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyC-q7-N7h">
                                                         <rect key="frame" x="8" y="43" width="382" height="63"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="28"/>
                                                         <state key="normal" title=" STUB" image="stub-image">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -387,7 +393,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjV-eq-ofV">
                                                         <rect key="frame" x="8" y="114" width="382" height="63"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="31"/>
                                                         <state key="normal" title="LOG" image="log-image">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -398,7 +404,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2me-nh-VUc">
                                                         <rect key="frame" x="8" y="194" width="382" height="63"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="31"/>
                                                         <state key="normal" title="ROCK" image="rock-image">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -425,7 +431,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WRITE YOUR NICKNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6y-nU-drS">
                                                         <rect key="frame" x="8" y="8" width="360" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -439,7 +445,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxf-pa-Z0A">
                                                         <rect key="frame" x="144" y="59" width="146" height="45"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                                         <state key="normal" title="NORMAL">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -450,7 +456,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhV-mR-ypu">
                                                         <rect key="frame" x="298" y="59" width="88" height="45"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="28"/>
                                                         <state key="normal" title="HARD">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -461,14 +467,14 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT SPEED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-9s-5TE">
                                                         <rect key="frame" x="15" y="13" width="371" height="26"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="27"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecb-BS-wnk">
                                                         <rect key="frame" x="15" y="59" width="107" height="45"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="27"/>
                                                         <state key="normal" title="SLOW">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -483,7 +489,7 @@
                                                 <rect key="frame" x="230" y="42" width="168" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                                 <state key="normal" title="SAVE">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -492,7 +498,7 @@
                                                 <rect key="frame" x="0.0" y="42" width="229" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="27"/>
                                                 <state key="normal" title="BACK">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
