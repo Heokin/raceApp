@@ -303,6 +303,16 @@
                                     <action selector="startGameAction:" destination="0OI-vc-A8u" eventType="touchUpInside" id="MVe-jK-es9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPh-la-g7E">
+                                <rect key="frame" x="234" y="88" width="180" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="QB4-rq-bTo"/>
+                                    <constraint firstAttribute="height" constant="42" id="hXW-yi-w6j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jH8-py-Bq2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -312,17 +322,21 @@
                             <constraint firstItem="PS8-fG-tlT" firstAttribute="top" secondItem="jH8-py-Bq2" secondAttribute="top" constant="139" id="HRd-jV-aBN"/>
                             <constraint firstItem="jUC-eA-QlU" firstAttribute="leading" secondItem="jH8-py-Bq2" secondAttribute="leading" constant="111" id="QCT-h8-LXX"/>
                             <constraint firstItem="PDy-z0-FLo" firstAttribute="top" secondItem="jUC-eA-QlU" secondAttribute="bottom" constant="5" id="STt-ki-7Zw"/>
+                            <constraint firstItem="uPh-la-g7E" firstAttribute="top" secondItem="jH8-py-Bq2" secondAttribute="top" id="XqS-De-hRS"/>
                             <constraint firstItem="jH8-py-Bq2" firstAttribute="trailing" secondItem="jUC-eA-QlU" secondAttribute="trailing" constant="98" id="bF5-0H-m5N"/>
                             <constraint firstItem="QSU-KO-XsG" firstAttribute="top" secondItem="PDy-z0-FLo" secondAttribute="bottom" constant="5" id="bni-tv-MP9"/>
+                            <constraint firstItem="uPh-la-g7E" firstAttribute="trailing" secondItem="jH8-py-Bq2" secondAttribute="trailing" id="dX0-VK-6E4"/>
                             <constraint firstItem="jH8-py-Bq2" firstAttribute="bottom" secondItem="QSU-KO-XsG" secondAttribute="bottom" constant="5" id="k7A-Xh-H8n"/>
                             <constraint firstItem="PS8-fG-tlT" firstAttribute="leading" secondItem="jH8-py-Bq2" secondAttribute="leading" constant="20" id="lxe-rd-6Rb"/>
                             <constraint firstItem="jH8-py-Bq2" firstAttribute="trailing" secondItem="PDy-z0-FLo" secondAttribute="trailing" constant="98" id="pK2-fg-PDM"/>
                             <constraint firstItem="QSU-KO-XsG" firstAttribute="leading" secondItem="jH8-py-Bq2" secondAttribute="leading" constant="111" id="qWT-4W-UXZ"/>
                             <constraint firstItem="PDy-z0-FLo" firstAttribute="leading" secondItem="jH8-py-Bq2" secondAttribute="leading" constant="111" id="rtQ-sn-r3v"/>
+                            <constraint firstItem="uPh-la-g7E" firstAttribute="leading" secondItem="jH8-py-Bq2" secondAttribute="leading" constant="234" id="tu8-gU-vfz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9Lf-ez-TNf"/>
                     <connections>
+                        <outlet property="dateLabel" destination="uPh-la-g7E" id="gJU-QZ-ufr"/>
                         <outlet property="mainLabel" destination="PS8-fG-tlT" id="eiG-TQ-Dm0"/>
                         <outlet property="settingsOutlet" destination="PDy-z0-FLo" id="F6b-oA-mmP"/>
                         <outlet property="startGameOutlet" destination="jUC-eA-QlU" id="P3f-3b-dDY"/>

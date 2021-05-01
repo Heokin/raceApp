@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var settingsOutlet: UIButton!
     @IBOutlet weak var topRaitingOutlet: UIButton!
     static var user: User!
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -26,8 +27,11 @@ class ViewController: UIViewController {
         startGameOutlet.layer.cornerRadius = 25
         settingsOutlet.layer.cornerRadius = 25
         topRaitingOutlet.layer.cornerRadius = 25
-//        settingsOutlet.setTitle("Settings", for: .normal)
-//        topRaitingOutlet.setTitle("Top Raiting", for: .normal)
+
+        let data = DateFormatter()
+        data.dateFormat = "yy MMM hh:mm"
+        let dataString = data.string(from: Date())
+        dateLabel.text = dataString
     }
     @IBAction func startGameAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
