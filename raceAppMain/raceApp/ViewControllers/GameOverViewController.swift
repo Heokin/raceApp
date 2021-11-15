@@ -1,4 +1,9 @@
-
+//
+//  ViewController.swift
+//  raceApp
+//
+//  Created by Stas Dashkevich on 16.04.21.
+//
 import UIKit
 
 class GameOverViewController: UIViewController {
@@ -20,6 +25,7 @@ class GameOverViewController: UIViewController {
         tryAgainButton.backgroundColor = .black
         backToMenuButton.layer.cornerRadius = backToMenuButton.frame.height / 2
         tryAgainButton.layer.cornerRadius = tryAgainButton.frame.height / 2
+        tryAgainButton.setTitle("Again", for: .normal)
 
         let text = "YOU LOSE :("
         let wholeRangeText = (text as NSString).range(of: text)

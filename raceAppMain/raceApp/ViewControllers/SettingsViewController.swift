@@ -2,7 +2,7 @@
 //  SettingsViewController.swift
 //  raceApp
 //
-//  Created by Stas Dashkevich on 17.04.21.
+//  Created by Stas Dashkevich on 16.04.21.
 //
 
 import UIKit

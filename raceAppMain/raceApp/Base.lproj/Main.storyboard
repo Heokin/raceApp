@@ -37,8 +37,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-Nw-ASE">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB2-Nw-ASE">
                                 <rect key="frame" x="158" y="774" width="98" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -82,8 +83,8 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="d6l-Up-fpa"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qrN-uz-sgb"/>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TOPRAITING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-Qo-2eL">
-                                <rect key="frame" x="117" y="161" width="180" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOPRAITING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTK-Qo-2eL">
+                                <rect key="frame" x="100" y="144" width="214" height="35"/>
                                 <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -92,10 +93,10 @@
                         <viewLayoutGuide key="safeArea" id="T8b-wx-IK4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uB2-Nw-ASE" firstAttribute="top" secondItem="XMK-DC-e8U" secondAttribute="bottom" constant="143" id="LDT-8R-U1M"/>
-                            <constraint firstItem="T8b-wx-IK4" firstAttribute="trailing" secondItem="XMK-DC-e8U" secondAttribute="trailing" constant="87" id="Ztq-yk-DkE"/>
-                            <constraint firstItem="XMK-DC-e8U" firstAttribute="leading" secondItem="T8b-wx-IK4" secondAttribute="leading" constant="87" id="aVm-Gw-WaY"/>
-                            <constraint firstItem="XMK-DC-e8U" firstAttribute="top" secondItem="sTK-Qo-2eL" secondAttribute="bottom" constant="75" id="hhp-rz-MDl"/>
+                            <constraint firstItem="T8b-wx-IK4" firstAttribute="trailing" secondItem="sTK-Qo-2eL" secondAttribute="trailing" constant="100" id="E0X-DJ-6qy"/>
+                            <constraint firstItem="XMK-DC-e8U" firstAttribute="top" secondItem="sTK-Qo-2eL" secondAttribute="bottom" constant="40" id="FuK-yy-AvG"/>
+                            <constraint firstItem="sTK-Qo-2eL" firstAttribute="leading" secondItem="T8b-wx-IK4" secondAttribute="leading" constant="100" id="H5c-FS-yPA"/>
+                            <constraint firstItem="sTK-Qo-2eL" firstAttribute="top" secondItem="T8b-wx-IK4" secondAttribute="top" constant="100" id="uro-K9-zXP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -122,14 +123,16 @@
                             <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCw-2m-4vV">
                                 <rect key="frame" x="0.0" y="0.0" width="435" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kMn-aG-a5V">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="kMn-aG-a5V">
                                     <rect key="frame" x="0.0" y="0.0" width="435" height="896"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj8-p5-Sez">
-                                            <rect key="frame" x="45" y="681" width="124" height="64"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj8-p5-Sez">
+                                            <rect key="frame" x="45" y="702" width="130" height="43"/>
                                             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="Qyi-8A-6wc"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                             <state key="normal" title="MENU">
                                                 <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -138,10 +141,12 @@
                                                 <action selector="goToMenu:" destination="a4J-nQ-TuA" eventType="touchUpInside" id="ahh-AC-YSM"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-gB-dnv">
-                                            <rect key="frame" x="241" y="681" width="138" height="64"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-gB-dnv">
+                                            <rect key="frame" x="207" y="707" width="172" height="38"/>
                                             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="132" id="qDa-h8-Tde"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                             <state key="normal" title="TRY AGAIN">
                                                 <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -150,14 +155,27 @@
                                                 <action selector="tryAgain:" destination="a4J-nQ-TuA" eventType="touchUpInside" id="ON3-tN-f7G"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You lose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKh-cq-Ae4">
-                                            <rect key="frame" x="45" y="326" width="334" height="38"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You lose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKh-cq-Ae4">
+                                            <rect key="frame" x="45" y="364" width="334" height="30.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="334" id="pEE-L8-fsM"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="PKh-cq-Ae4" secondAttribute="trailing" constant="45" id="7Tl-Zg-lm8"/>
+                                        <constraint firstItem="PKh-cq-Ae4" firstAttribute="leading" secondItem="kMn-aG-a5V" secondAttribute="leading" constant="45" id="9pK-WE-6Dy"/>
+                                        <constraint firstItem="hqq-gB-dnv" firstAttribute="leading" secondItem="kj8-p5-Sez" secondAttribute="trailing" constant="72" id="BGT-Ul-8UO"/>
+                                        <constraint firstAttribute="trailing" secondItem="hqq-gB-dnv" secondAttribute="trailing" constant="85" id="EoB-ld-Rmx"/>
+                                        <constraint firstAttribute="bottom" secondItem="hqq-gB-dnv" secondAttribute="bottom" constant="151" id="G3R-ul-x38"/>
+                                        <constraint firstItem="hqq-gB-dnv" firstAttribute="leading" secondItem="kj8-p5-Sez" secondAttribute="trailing" constant="72" id="Gab-F0-m10"/>
+                                        <constraint firstAttribute="bottom" secondItem="kj8-p5-Sez" secondAttribute="bottom" constant="151" id="M1l-bZ-6bJ"/>
+                                        <constraint firstItem="kj8-p5-Sez" firstAttribute="leading" secondItem="kMn-aG-a5V" secondAttribute="leading" constant="45" id="lpH-B0-cEa"/>
+                                        <constraint firstItem="PKh-cq-Ae4" firstAttribute="top" secondItem="kMn-aG-a5V" secondAttribute="top" constant="364" id="sNy-yO-LTh"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="regular"/>
                             </visualEffectView>
@@ -262,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RACE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS8-fG-tlT">
-                                <rect key="frame" x="20" y="227" width="374" height="26"/>
+                                <rect key="frame" x="20" y="227" width="374" height="30.5"/>
                                 <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -453,7 +471,7 @@
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                             </view>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-HG-EAB">
-                                                <rect key="frame" x="0.0" y="728" width="398" height="129"/>
+                                                <rect key="frame" x="0.0" y="728" width="398" height="139"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxf-pa-Z0A">
@@ -499,17 +517,8 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXS-MK-2oO">
-                                                <rect key="frame" x="230" y="42" width="168" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
-                                                <state key="normal" title="SAVE">
-                                                    <color key="titleColor" systemColor="labelColor"/>
-                                                </state>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWF-CC-4RX">
-                                                <rect key="frame" x="0.0" y="42" width="229" height="51"/>
+                                                <rect key="frame" x="0.0" y="42" width="92" height="39"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="27"/>
@@ -519,6 +528,15 @@
                                                 <connections>
                                                     <action selector="backButton:" destination="X1l-Xn-Tc5" eventType="touchUpInside" id="8Cg-Ff-ctd"/>
                                                 </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXS-MK-2oO">
+                                                <rect key="frame" x="222" y="42" width="168" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="PerfectDOSVGA437" family="PerfectDOSVGA437" pointSize="26"/>
+                                                <state key="normal" title="SAVE">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

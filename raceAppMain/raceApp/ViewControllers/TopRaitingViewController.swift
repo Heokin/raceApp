@@ -1,4 +1,9 @@
-
+//
+//  ViewController.swift
+//  raceApp
+//
+//  Created by Stas Dashkevich on 16.04.21.
+//
 import UIKit
 
 class TopRaitingViewController: UIViewController {

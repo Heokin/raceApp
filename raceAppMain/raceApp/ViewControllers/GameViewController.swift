@@ -1,9 +1,13 @@
-
+//
+//  ViewController.swift
+//  raceApp
+//
+//  Created by Stas Dashkevich on 16.04.21.
+//
 import UIKit
 
 class GameViewController: UIViewController {
 
-    
     @IBOutlet weak var moveToLeftButton: UIButton!
     @IBOutlet weak var moveToRightButton: UIButton!
     @IBOutlet weak var roadImageView: UIImageView!
